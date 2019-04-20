@@ -11,8 +11,10 @@
 
   <body>
 
-    <%= render  "layouts/shared/navigation"%>
+    
 
     <%= yield %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
   </body>
 </html>
