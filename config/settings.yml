@@ -1,0 +1,3 @@
+notifications:
+  email:
+    default_from: 'example@example.com'
