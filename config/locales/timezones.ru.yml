@@ -1,0 +1,19 @@
+# Translations for timezones added in config/initializers/timezones.ru.rb for use with i18n-timezones gem
+# Place this file in config/locales/timezones.ru.yml
+ru:
+  timezones:
+    Kaliningrad:   Калининград
+    Simferopol:    Республика Крым и Севастополь
+    Volgograd:     Волгоград
+    Astrakhan:     Астрахань
+    Ulyanovsk:     Ульяновск
+    Samara:        Самара
+    Omsk:          Омск
+    Barnaul:       Барнаул
+    Novokuznetsk:  Новокузнецк
+    Chita:         Чита
+    Khandyga:      Хандыга
+    Sakhalin:      Сахалин
+    Ust-Nera:      Усть-Нера
+    Srednekolymsk: Среднеколымск и Северные Курилы
+    Anadyr:        Анадырь

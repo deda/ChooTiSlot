@@ -1,17 +1,23 @@
-    <div class="navbar navbar-default sticky-top ">
+    <nav class="navbar navbar-light bg-light d-flex">
       <div class="container">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">CTS</a>
-        <div class="navbar-collapse collapse navbar-responsive-collapse">
-          <ul class="nav navbar-nav">
-            <li><%= link_to "Link1", "layouts/shared/path1"  %></li>
-            <li><%= link_to "LogIn", "login"  %></li>
-            <li><%= link_to "SignUp", "layouts/shared/signup"  %></li>
-          </ul>
+        <div class="logo">
+          <a class="navbar-brand" href="#">CTS </a>
+        </div>
+        <div class="m-auto">
+          <form class="form-inline search-form">
+            <input class="form-control mr-sm-2" type="search" placeholder="@search" aria-label="Search">
+          </form>
+        </div>
+        <div class="user-section">
+          <% if user_signed_in? %>
+                <a href="<%= user_path(current_user)%>" data-method="delete">
+                    <i class="fa fa-user"></i>
+                </a>
+            <% else %>
+                <a href="<%= new_user_session_path%>">
+                      <i class="fa fa-sign-in"></i>
+                </a>
+            <% end %>
         </div>
       </div>
-    </div>
+    </nav>
