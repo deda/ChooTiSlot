@@ -38,3 +38,5 @@ gem "twitter-bootstrap-rails"
 gem "pg"
 gem 'devise'
 gem 'config'
+gem 'font-awesome-rails'
+gem 'jquery-rails'
